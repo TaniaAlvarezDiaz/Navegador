@@ -1,0 +1,19 @@
+/* Errores sintácticos */
+h1 {
+  color: 20px; /*Error*/
+  font-size: 32px;
+  text-align: bold; /*Error*/
+  font-style: green; /*Error*/
+}
+ 
+h2 {
+  color: left; /*Error*/
+  font-size: green; /*Error*/
+  font-style: italic;
+}
+ 
+p {
+  color: green; 
+  text-align: normal; /*Error*/
+  font-style: left /*Error*/
+/*Error*/

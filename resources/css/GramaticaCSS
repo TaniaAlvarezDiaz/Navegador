@@ -1,0 +1,50 @@
+css : bloque+
+
+bloque : nombre LLA sentencia* LLC
+
+nombre : H1 | H2 | P | A
+
+sentencia : clave DP valor PC
+
+clave : COLOR | FSIZE | TALIGN | FSTYLE
+
+valor : color | size | alignment | fstyle
+
+color : BLACK | WHITE | YELLOW | BLUE | GREEN
+
+///// Podría ser léxico o sintáctico (Tiene token concreto y, además regla)
+size : [0-9]+ PX
+
+alignment: LEFT | RIGHT | CENTER
+
+fstyle : NORMAL | BOLD | ITALIC | UNDERLINE
+
+
+
+//// Léxico
+
+LLA : '{'
+LLC : '}'
+H1 : 'h1'
+H2 : 'h2'
+P : 'p'
+A : 'a'
+DP : ':'
+PC : ';'
+COLOR : 'color'
+BLACK : 'black'
+WHITE : 'white'
+YELLOW : 'yellow'
+BLUE : 'blue'
+GREEN : 'green'
+FSIZE : 'font-size'
+TALIGN : 'text-align'
+PX : 'px'
+LEFT : 'left'
+RIGHT : 'right'
+CENTER : 'center'
+FSTYLE : 'font-style'
+NORMAL : 'normal'
+BOLD : 'bold'
+ITALIC : 'italic'
+UNDERLINE : 'underline'

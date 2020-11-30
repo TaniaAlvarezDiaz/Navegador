@@ -1,0 +1,67 @@
+html : HTML cabecera cuerpo FHTML
+
+cabecera : HEAD titulo link* FHEAD
+
+titulo : TITLE texto FTITLE
+
+link : LINK HREF EQ cadena REL EQ cadena TYPE EQ cadena MAYOR
+
+cadena : COMILLAS texto COMILLAS
+
+cuerpo : BODY sentenciaCuerpo* FBODY
+
+sentenciaCuerpo : h1 | h2 | parrafo | enlace
+
+h1 : H1 sentenciaInterna* FH1
+
+h2 : H2 sentenciaInterna* FH2
+
+parrafo :  P sentenciaInterna* FP
+
+texto : palabra*
+
+///// Podría ser léxico o sintáctico (Tiene token concreto y, además regla)
+palabra : [a-zA-ZáéíóúÁÉÍÓÚ0-1.,;:/]+
+
+sentenciaInterna : texto | negrita | cursiva | underline | enlace
+
+negrita : B texto FB
+
+cursiva : I texto FI
+
+underline : U texto FU
+
+enlace : A HREF EQ cadena MAYOR texto FA
+
+
+//// Léxico
+
+MAYOR : '>'
+EQ : '='
+COMILLAS : '"'
+HREF : 'href'
+REL : 'rel'
+TYPE : 'type'
+HTML : '<html>'
+FHTML : '</html>'
+HEAD : '<head>'
+FHEAD : '</head>'
+TITLE : '<title>'
+FTITLE : '</title>'
+LINK : '<link'
+BODY : '<body>'
+FBODY : </body>'
+H1 : '<h1>'
+FH1 : '</h1>'
+H2 : '<h2>'
+FH2 : </h2>'
+P : '<p>'
+FP : '</p>'
+B : '<b>'
+FB : '</b>'
+I : '<i>'
+FI : '</i>'
+U : '<u>'
+FU : '</u>'
+A : '<a'
+FA : '</a>'

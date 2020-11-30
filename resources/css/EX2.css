@@ -1,0 +1,20 @@
+/* Errores léxicos */
+h1 {
+  color: black;
+  font-size: 32sp; /*Error*/
+  text-align: center;
+  font-style: italic;
+}
+ 
+div { /*Error*/
+  color: blue;
+  font-size: 18px;
+  font-style: italic;
+  text-align: justify; /*Error*/
+}
+ 
+p {
+  color: orange; /*Error*/
+  text-align: left;
+  font-style: oblique; /*Error*/
+}

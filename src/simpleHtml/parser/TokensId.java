@@ -1,0 +1,36 @@
+package simpleHtml.parser;
+
+public enum TokensId {
+	// Tokens admitidos
+	EOF,
+	PALABRA,
+	MAYOR,
+	EQ,
+	COMILLAS,
+	HREF,
+	REL,
+	TYPE,
+	HTML,
+	FHTML,
+	HEAD,
+	FHEAD,
+	TITLE,
+	FTITLE,
+	LINK,
+	BODY,
+	FBODY,
+	H1,
+	FH1,
+	H2,
+	FH2,
+	P,
+	FP,
+	B,
+	FB,
+	I,
+	FI,
+	U,
+	FU,
+	A,
+	FA;
+}

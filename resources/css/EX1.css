@@ -1,0 +1,24 @@
+h1 {
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  font-style: italic;
+}
+ 
+h2 {
+  color: blue;
+  font-size: 18px;
+  font-style: italic;
+}
+ 
+p {
+  color: green;
+  text-align: left;
+  font-style: normal;
+}
+
+a {
+  color: yellow;
+  font-size: 12px;
+  text-align: right;
+}
